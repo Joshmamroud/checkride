@@ -20,11 +20,11 @@ loginPage.controller("mainController",function($scope, $window, $firebaseObject)
                         userInfo.$loaded().then(function(){
                             switch(userInfo.userData.userType.toLowerCase()){
                                 case "examiner":
-                                    $window.location.href ="http://localhost:8000/Desktop/HTML%26CSS%26JSProjects/CheckRide/examinerFiles/examinerCalendar.html"
+                                    $window.location.href ="../examinerFiles/examinerCalendar.html"
                                     break;
                                     
                                 case "student":
-                                    $window.location.href = "http://127.0.0.1:59651/StudentFiles/studentHomePage.html";
+                                    $window.location.href = "../StudentFiles/studentHomePage.html";
                                     break;
                             }
                         });
